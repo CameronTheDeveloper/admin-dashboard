@@ -1,0 +1,13 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar{
+    grid-column: 1/2;
+    background-color: rgb(53, 103, 180);
+}
+
+.sidebar ul{
+    list-style-type: none;
+}
