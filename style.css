@@ -15,7 +15,13 @@
     display: grid;
     gap: 20px;
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color:rgb(92, 110, 135)
+}
+
+.header-symbol img{
+    height: auto;
+    width: 200px;
 }
 
 .sidebar{
@@ -66,7 +72,7 @@
     grid-column: 1/2;
     display: grid;
     grid-template-rows: 1fr 8fr;
-    /* border-left-width and border-left-color */
+    /* border-left-width and border-left-color, border-radius */
 }
 
 .project-container{
