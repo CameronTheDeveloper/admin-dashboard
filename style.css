@@ -10,14 +10,36 @@
 }
 
 .header{
+    background-color:rgb(92, 110, 135);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div{
+    padding: 4px;
+}
+
+.header-left, .header-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-message, .header-buttons{
+    margin-top: 16px;
+}
+
+
+/* .header{
     padding: 18px;
     grid-column: 2/3;
     display: grid;
+    justify-content: space-between;
     gap: 20px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     background-color:rgb(92, 110, 135)
-}
+} */
 
 .header-symbol img{
     height: auto;
