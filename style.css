@@ -10,33 +10,50 @@
 }
 
 .header{
+    padding: 18px;
     grid-column: 2/3;
-    background-color:rgb(92, 110, 136)
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    background-color:rgb(92, 110, 135)
 }
 
-
-
 .sidebar{
+    padding: 4px;
     font-size: 24px;
-    justify-content: center;
     display: grid;
+    
+    grid-template-rows: 3fr 6fr 2fr;
     grid-row: 1/-1;
     grid-column: 1/2;
     background-color: rgb(53, 103, 180);
 }
 
-.dash-list{
-    display: grid;
+.sidebar a{
+    text-decoration: none;
+    color: black;
 }
+
+.dash-top{
+    margin-top: 12px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.dash-mid, .dash-bott{
+    display: grid; 
+}
+
+.dash-bott{
+    margin-top: 16px;
+}
+
+
 
 .main{
     display: grid;
     gap: 16px;
     grid-template-columns: 1fr 1fr;
-}
-
-.dash-item8{
-    margin-top: 16px;
 }
 
 .projects{
