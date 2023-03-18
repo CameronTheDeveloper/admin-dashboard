@@ -24,6 +24,11 @@
     width: 200px;
 }
 
+.header .search img{
+    height: auto;
+    width: 12px;
+}
+
 .sidebar{
     padding: 4px;
     font-size: 24px;
