@@ -47,15 +47,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
-    
 }
+
 .header-buttons button{
+    font-family:Arial, Helvetica, sans-serif;
     padding: 2px;
-    border-radius: 5px;
-    width: 75px;
-    background-color: rgb(53, 103, 180);
+    border-radius: 30px;
+    background-color: rgb(154, 154, 154);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
+    width: 100px;
+    height: 35px;
 }
 
 .header-symbol img{
@@ -84,7 +86,6 @@
     grid-row: 1/-1;
     grid-column: 1/2;
     background-color: rgb(53, 103, 180);
-    
 }
 
 .sidebar a, .main a{
