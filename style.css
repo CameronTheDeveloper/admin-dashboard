@@ -65,7 +65,14 @@
 
 .header .search img{
     height: auto;
-    width: 12px;
+    width: 18px;
+    margin-right: 4px;
+}
+
+#header-search{
+    border-radius: 12px;
+    border: 4px solid rgb(251, 251, 251);
+    padding: 4px;
 }
 
 /* Sidebar */
