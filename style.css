@@ -7,8 +7,10 @@
     display: grid;
     grid-template-columns: 1fr 10fr;
     grid-template-rows: 1fr 10fr;
-    height: 125vh;
+    height: 100vh;
 }
+
+/* Header */
 
 .header{
     background-color:rgb(143, 186, 242);
@@ -35,7 +37,6 @@
     margin-top: 8px;
 }
 
-
 .header-message{
     font-size: 24px;
     margin-top: 60px;
@@ -57,18 +58,6 @@
     font-size: 16px;
 }
 
-
-/* .header{
-    padding: 18px;
-    grid-column: 2/3;
-    display: grid;
-    justify-content: space-between;
-    gap: 20px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    background-color:rgb(92, 110, 135)
-} */
-
 .header-symbol img{
     height: auto;
     width: 200px;
@@ -79,17 +68,19 @@
     width: 12px;
 }
 
+/* Sidebar */
 .sidebar{
     padding: 4px;
-    font-size: 24px;
+    font-size:1.75rem;
     display: grid;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 3fr;
     grid-row: 1/-1;
     grid-column: 1/2;
     background-color: rgb(53, 103, 180);
+    
 }
 
-.sidebar a{
+.sidebar a, .main a{
     text-decoration: none;
     color: black;
 }
@@ -110,39 +101,44 @@
 
 .dash-bott{
     margin-top: 16px;
-    padding: 8px;
+    padding: 14px;
     font-style: italic;
 }
 
-
+/* Main */
 
 .main{
+    background-color: rgb(154, 154, 154);
     display: grid;
     gap: 16px;
     grid-template-columns: 3fr 1fr;
 }
 
+.projects-title, .announcements-title{
+    font-size: 1rem;
+}
 .projects{
-    
     grid-column: 1/2;
     display: grid;
-    grid-template-rows: 1fr 30fr;
+    grid-template-rows: 1fr 20fr;
     padding: 12px;
-    /* border-left-width and border-left-color, border-radius */
 }
 
 .project-container{
     display: grid;
     gap: 8px;
+    padding: 4px;
+
     grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .announcements{
     display: grid;
-    grid-template-rows: 1fr 24fr;
+    justify-content: center;
+    margin-top: 75px;
+    grid-template-rows: 1fr 12fr 5fr;
     grid-column: 2/3;
-    padding: 12px;
 }
 
 .announcement-container{
@@ -152,15 +148,12 @@
     grid-template-rows: repeat(3, 1fr);
 }
 
-
-/* Figure out how to change size of cards using minmax, etc. Also space everything differently*/
-
 .card{
     text-align: center;
-    background-color: rgb(146, 146, 146);
-    border-radius: 8px;
-    height: 150px;
-    width: 250px;
+    background-color: rgb(156, 198, 210);
+    border-radius: 16px;
+    height: 180px;
+    width: 275px;
 }
 
 .card .title{
